@@ -46,6 +46,10 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    height: 120px;
+}
+
 body {
     background: var(--clr-background);
     margin: 0;
@@ -232,7 +236,6 @@ header {
 
 .card {
     background: var(--clr-background);
-    width: 1632px;
     height: 560px;
     margin-left: 144px;
     margin-right: 144px;
