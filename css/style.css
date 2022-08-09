@@ -7,11 +7,12 @@
 /* Custom properties */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+    --ff-orienta: 'Orienta', sans-serif;
+    --ff-hind-siliguri: 'Hind Siliguri', sans-serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-white: #FFFFFF;
     --clr-contrast: #F99136;
@@ -20,9 +21,9 @@
     --clr-background: #FCF5EF;
 
     --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-h2: 48pt;
+    --fs-h3: 24pt;
+    --fs-body: 36pt;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
           0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
@@ -46,16 +47,10 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-background);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-orienta);
     font-size: var(--fs-body);
-    line-height: 1.6;
-}
-
-section {
-    padding: 5em, 2em;
 }
 
 img {
@@ -102,42 +97,17 @@ h3 {
 }
 
 h1 {
-    font-size: var(--fs-h1)
+    font-size: var(--fs-h1);
 }
 
 h2 {
-    font-size: var(--fs-h2)
+    font-size: var(--fs-h2);
+    font-family: var(--ff-ubuntu);
 }
 
 h3 {
-    font-size: var(--fs-h3)
-}
-
-.section__title {
-    margin-top: .25em;
-    margin-bottom: .25em;
-    padding-top: .5em;
-}
-
-.section__title--intro {
-    font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong {
-    display: block;
-}
-
-.section__subtitle {
-    margin: 0;
     font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
+    font-family: var(--ff-orienta);
 }
 
 /* Header */
@@ -253,34 +223,51 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;
+    background-color: var(--clr-primary);
+    text-align: left;
     justify-content: center;
-}
-
-.section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 1em;
+    padding-top: 86px;
+    padding-bottom: 86px;
 }
 
 .card {
     background: var(--clr-background);
     width: 1632px;
     height: 560px;
-    margin: 86px;
+    margin-left: 144px;
+    margin-right: 144px;
     display: flex;
     border-radius: 8px;
-    white-space: initial;
+}
+
+.card + .card {
+    margin-top: 86px;
 }
 
 .card-image {
-    background-color: aqua;
     height: 560px;
     width: 623px;
     margin-right: 75px;
     border-radius: 8px 0 0 8px;
+}
+
+.card-text {
+    width: 859px;
+    padding-top: 49px;
+}
+
+.card-tag {
+    color: var(--clr-contrast);
+}
+
+.card-title {
+    color: var(--clr-dark);
+    margin-top: 115px;
+}
+
+.card-description {
+    color: var(--clr-dark);
+    margin-top: 27px;
 }
 
 /* Footer */
