@@ -106,13 +106,13 @@ header {
     display: flex;
     justify-content: space-between;
     color: var(--clr-primary);
-    padding-left: 144px;
-    padding-right: 144px;
+    padding-left: 282px;
+    padding-right: 282px;
 }
 
 .home-page-title {
     margin-top: 33px;
-    margin-right: 680px;
+    margin-right: 390px;
 }
 
 .home-page-nav {
@@ -132,13 +132,13 @@ header {
     justify-content: center;
     padding-top: 86px;
     padding-bottom: 86px;
-    padding-left: 144px;
-    padding-right: 144px;
+    padding-left: 282px;
+    padding-right: 282px;
 }
 
 .card {
     background: var(--clr-background);
-    height: 560px;
+    height: 466px;
     display: flex;
     border-radius: 8px;
 }
@@ -148,15 +148,15 @@ header {
 }
 
 .card-image {
-    height: 560px;
-    width: 623px;
-    margin-right: 75px;
+    height: 466px;
+    width: 518px;
+    margin-right: 61px;
     border-radius: 8px 0 0 8px;
 }
 
 .card-text {
-    margin-right: 75px;
-    padding-top: 49px;
+    margin-right: 61px;
+    padding-top: 30px;
 }
 
 .card-tag {
@@ -165,7 +165,7 @@ header {
 
 .card-title {
     color: var(--clr-dark);
-    margin-top: 115px;
+    margin-top: 87px;
 }
 
 .card-description {
