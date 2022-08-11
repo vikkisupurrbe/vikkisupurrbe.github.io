@@ -135,13 +135,13 @@ header {
 .card-image {
     height: 466px;
     width: 518px;
-    margin-right: 61px;
+    margin-right: 58px;
     border-radius: 8px 0 0 8px;
 }
 
 .card-text {
-    margin-right: 61px;
-    padding-top: 30px;
+    margin-right: 58px;
+    margin-top: 30px;
 }
 
 .card-tag {
@@ -156,6 +156,9 @@ header {
 .card-description {
     color: var(--clr-dark);
     margin-top: 27px;
+    font-size: var(--fs-body);
+    font-family: var(--ff-orienta);
+    line-height: 50px;
 }
 
 /* Footer */
