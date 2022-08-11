@@ -76,6 +76,11 @@ h3 {
     font-family: var(--ff-orienta);
 }
 
+p {
+    font-size: var(--fs-h3);
+    font-family: var(--ff-hind-siliguri);
+}
+
 /* Header */
 
 header {
@@ -192,4 +197,16 @@ header {
 
 .mail-icon {
     font-size: 42px;
+}
+
+/* Project pages */
+
+.overview {
+    background: var(--clr-primary);
+}
+
+.overview-body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 250px 800px;
 }
