@@ -23,6 +23,8 @@
     --fs-h2: 48px;
     --fs-h3: 24px;
     --fs-body: 36px;
+    --fs-project-paragraph: 20px;
+    --fs-project-subtitle: 39px;
 }
 
 /* General styles */
@@ -212,4 +214,62 @@ header {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 250px 800px;
+}
+
+.project-main-section {
+    padding-left: 560px;
+    padding-right: 560px;
+    padding-top: 96px;
+}
+
+.project-section-title {
+    margin-top: 24px;
+    line-height: 72px;
+}
+
+.project-paragraph {
+    font-size: var(--fs-project-paragraph);
+    font-family: var(--fs-hind-siliguri);
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.project-paragraph-problem {
+    margin-top: 40px;
+}
+
+.project-question {
+    margin-top: 24px;
+}
+
+.project-section-subtitle {
+    font-size: var(--fs-project-subtitle);
+    color: var(--clr-primary);
+    line-height: 56px;
+}
+
+.solution-image-overlay {
+    text-align: right;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.solution-image {
+    width: 533px;
+    margin-left: auto;
+}
+
+.solution-image-bottom {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.solution-image-top {
+    position: absolute;
+    top: 80px;
+    left: 250px;
 }
