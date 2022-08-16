@@ -43,6 +43,7 @@ body {
     margin: 0;
     font-family: var(--ff-orienta);
     font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
 }
 
 img {
@@ -54,11 +55,17 @@ strong {
     font-weight: var(--fw-bold);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* Typography */
 
 h1,
 h2,
-h3 {
+h3,
+p {
     line-height: 1;
     margin: 0;
 }
@@ -66,21 +73,25 @@ h3 {
 h1 {
     font-size: var(--fs-h1);
     font-family: var(--ff-ubuntu);
+    font-weight: var(--fw-bold);
 }
 
 h2 {
     font-size: var(--fs-h2);
     font-family: var(--ff-ubuntu);
+    font-weight: var(--fw-bold);
 }
 
 h3 {
     font-size: var(--fs-h3);
     font-family: var(--ff-orienta);
+    font-weight: var(--fw-reg);
 }
 
 p {
     font-size: var(--fs-h3);
     font-family: var(--ff-hind-siliguri);
+    font-weight: var(--fw-reg);
 }
 
 /* Header */
@@ -103,8 +114,12 @@ header {
 }
 
 .header-link {
-    color: inherit;
+    color: var(--clr-primary);
     text-decoration: none;
+}
+
+.header-link:hover {
+    color: var(--clr-primary);
 }
 
 .header-link-email {
@@ -212,11 +227,14 @@ header {
     padding-top: 280px;
     padding-bottom: 280px;
     text-align: center;
+    color: var(--clr-dark);
 }
 
 .project-summary {
     font-size: var(--fs-project-subtitle);
     font-family: var(--ff-orienta);
+    margin-top: 40px;
+    line-height: 56px;
 }
 
 .overview {
@@ -235,12 +253,22 @@ header {
     margin-top: 48px;
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
+    
+}
+
+.overview-body + .overview-body {
+    margin-top: 32px;
+}
+
+.overview-body-text {
+    line-height: 32px;
 }
 
 .project-main-section {
     padding-left: 560px;
     padding-right: 560px;
     padding-top: 96px;
+    color: var(--clr-dark);
 }
 
 .project-section-title {
@@ -252,9 +280,8 @@ header {
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
     line-height: 32px;
-    margin: 0;
-    padding: 0;
     list-style-position: inside;
+    margin-top: 24px;
 }
 
 .project-paragraph-problem {
@@ -281,22 +308,18 @@ header {
     text-align: right;
 }
 
-.research-setup {
-    margin-top: -40px;
-}
-
 .research-hypothesis {
     display: grid;
-    grid-template-columns: 135px auto;
+    grid-template-columns: 112px auto;
 }
 
 .research-method {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 85px auto;
 }
 
 .research-results {
     display: grid;
-    grid-template-columns: 92px auto;
+    grid-template-columns: 78px auto;
     margin-bottom: 48px;
 }
