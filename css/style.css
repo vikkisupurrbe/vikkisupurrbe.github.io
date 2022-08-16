@@ -233,6 +233,8 @@ header {
     grid-template-rows: auto;
     grid-template-columns: 250px 800px;
     margin-top: 48px;
+    font-size: var(--fs-project-paragraph);
+    font-family: var(--ff-hind-siliguri);
 }
 
 .project-main-section {
@@ -248,7 +250,7 @@ header {
 
 .project-paragraph {
     font-size: var(--fs-project-paragraph);
-    font-family: var(--fs-hind-siliguri);
+    font-family: var(--ff-hind-siliguri);
     line-height: 32px;
     margin: 0;
     padding: 0;
@@ -266,29 +268,35 @@ header {
 .project-section-subtitle {
     font-size: var(--fs-project-subtitle);
     color: var(--clr-primary);
-    line-height: 56px;
+    margin-top: 40px;
 }
 
-.solution-image-overlay {
-    text-align: right;
-    position: relative;
-    top: 0;
-    left: 0;
+.solution-subtitle {
+    line-height: 56px;
 }
 
 .solution-image {
     width: 533px;
     margin-left: auto;
+    text-align: right;
 }
 
-.solution-image-bottom {
-    position: relative;
-    top: 0;
-    left: 0;
+.research-setup {
+    margin-top: -40px;
 }
 
-.solution-image-top {
-    position: absolute;
-    top: 80px;
-    left: 250px;
+.research-hypothesis {
+    display: grid;
+    grid-template-columns: 135px auto;
+}
+
+.research-method {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.research-results {
+    display: grid;
+    grid-template-columns: 92px auto;
+    margin-bottom: 48px;
 }
