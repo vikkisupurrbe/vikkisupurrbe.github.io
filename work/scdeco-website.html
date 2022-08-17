@@ -149,8 +149,18 @@
                 </p>
             </div>
 
-            <div id="research-carousel" class="carousel slide">
-                <div class="carousel-inner">
+            <div id="research-carousel" class="carousel slide carousel-dark research-carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#research-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
                     <div class="carousel-item active">
                         <img src="../media/Research - Slide1.PNG" class="d-block w-100" alt="...">
                     </div>
@@ -186,41 +196,49 @@
                 </button>
             </div>
 
-            <p class="project-section-subtitle">User Profile</p>
-            <img src="../media/Customer Profile.jpg">
-            <p>
+            <p class="project-paragraph project-image-paragraph">
+                SCdeco's website was not well-utilized by its customers to educate themselves on the available services. Most of the 
+                communication for ordering decorations was done through emails and phone calls. If the customer did not know too much 
+                about apparel decoration methods, it would involve a lot of back-and-forth conversations, which would be quite time-consuming. 
+                The survey showed that a more educational service page, a quote calculator, and an order tracker would be helpful in 
+                the ordering process.
+            </p>
+
+            <p class="project-section-subtitle project-section-subheading">User Profile</p>
+            <img class="project-image shadow" src="../media/Customer Profile.jpg">
+            <p class="project-paragraph project-image-paragraph">
                 The customer profile shown below describes SCdeco's customers' <strong>jobs</strong> (shown in yellow sticky notes), 
                 <strong>pains</strong> (shown in orange sticky notes), and <strong>gains</strong> (shown in green sticky notes). The 
                 jobs, pains, and gains are ranked from high to low based on the level significance, from top to bottom. This graph helped 
                 me build the key features of the new SCdeco website by prioritizing the value of increasing customer satisfaction.
             </p>
 
-            <h2>2. Defining the goals</h2>
+            <h2 class="project-section-title project-research-title">2. Defining the goals</h2>
             <p class="project-section-subtitle">Value Map</p>
-            <img src="../media/Value Map.jpg">
-            <p>
+            <img class="project-image shadow" src="../media/Value Map.jpg">
+            <p class="project-paragraph project-image-paragraph">
                 The value map consists of three parts, gain creators, pain relievers, and product & services. They are a reflection of the 
                 customer profile in customer profile. Gain creators are the possible reasons that may increase customer satisfaction in the 
                 ordering process. Pain relivers are the possible solutions to customer's concerns. Product and services are new features the 
                 redesigned website focus on. And the goals are to implement these new features in the new website.
             </p>
-            <p>
+            <p class="project-paragraph">
                 SCdeco's customers main goals are:
             </p>
-            <ul>
+            <ul class="project-paragraph value-map-list">
                 <li>To find the most cost-effective decoration method(s) for their projects</li>
                 <li>To make sure the order can be finished and delivered with in the given period of time</li>
                 <li>To satisfy their customers</li>
             </ul>
 
-            <h2>3. Key features</h2>
+            <h2 class="project-section-title project-research-title">3. Key features</h2>
             <p class="project-section-subtitle">User Workflow</p>
-            <img src="../media/User Flow Diagram with Background.png">
-            <p>
+            <img class="project-image shadow" src="../media/User Flow Diagram with Background.png">
+            <p class="project-paragraph project-image-paragraph">
                 The user workflow describes a list of tasks the user is expected to complete on the redesigned website. The key features 
                 marked in green are:
             </p>
-            <ul>
+            <ul class="project-paragraph user-workflow-list">
                 <li>Educational service pages</li>
                 <li>A decoration wizard</li>
                 <li>Quote calculator</li>
@@ -230,16 +248,41 @@
                 <li>Shipping status tracker</li>
             </ul>
 
-            <h2>4. The competition</h2>
-            <p class="project-section-subtitle">Competitive Analysis</p>
-            <img src="../media/Competition - 1.jpg">
-            <img src="../media/Competition - 2.jpg">
-            <img src="../media/Competition - 3.jpg">
-            <p class="project-section-subtitle">Insights</p>
-            <p>
+            <h2 class="project-section-title project-research-title">4. The competition</h2>
+            <p class="project-section-subtitle research-competition-subtitle">Competitive Analysis</p>
+
+            <div id="competition-carousel" class="carousel slide carousel-dark competition-carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#competition-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#competition-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#competition-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
+                    <div class="carousel-item active">
+                        <img src="../media/Competition - 1.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/Competition - 2.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/Competition - 3.jpg" class="d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#competition-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#competition-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <p class="project-section-subtitle project-section-subheading">Insights</p>
+            <p class="project-paragraph">
                 To make sure the redesigned SCdeco's website can help customers achieve their goals, it needs to be:
             </p>
-            <ul>
+            <ul class="project-paragraph insights-list">
                 <li>Organized, so that the information users need can be easily found</li>
                 <li>Intuitive, so that users understand what is possible and what is not</li>
                 <li>Simple, so that users feel it's easy to follow through the ordering process</li>
