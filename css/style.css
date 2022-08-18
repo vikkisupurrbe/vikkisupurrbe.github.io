@@ -25,7 +25,6 @@
     --fs-h4: 25px;
     --fs-prototype-link: 24px;
     --fs-project-paragraph: 20px;
-    --fs-project-subtitle: 39px;
 }
 
 /* General styles */
@@ -237,8 +236,6 @@ header {
 }
 
 .project-summary {
-    font-size: var(--fs-project-subtitle);
-    font-family: var(--ff-orienta);
     margin-top: 40px;
     line-height: 56px;
 }
@@ -294,7 +291,6 @@ header {
 }
 
 .project-section-subtitle {
-    font-size: var(--fs-project-subtitle);
     color: var(--clr-primary);
     margin-top: 40px;
 }
