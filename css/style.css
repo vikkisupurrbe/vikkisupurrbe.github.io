@@ -21,8 +21,9 @@
 
     --fs-h1: 60px;
     --fs-h2: 48px;
-    --fs-h3: 24px;
-    --fs-body: 36px;
+    --fs-h3: 39px;
+    --fs-h4: 25px;
+    --fs-prototype-link: 24px;
     --fs-project-paragraph: 20px;
     --fs-project-subtitle: 39px;
 }
@@ -43,7 +44,7 @@ body {
     background: var(--clr-background);
     margin: 0;
     font-family: var(--ff-orienta);
-    font-size: var(--fs-body);
+    font-size: var(--fs-project-paragraph);
     font-weight: var(--fw-reg);
 }
 
@@ -89,8 +90,14 @@ h3 {
     font-weight: var(--fw-reg);
 }
 
+h4 {
+    font-size: var(--fs-h4);
+    font-family: var(--ff-orienta);
+    font-weight: var(--fw-reg);
+}
+
 p {
-    font-size: var(--fs-h3);
+    font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
     font-weight: var(--fw-reg);
 }
@@ -139,19 +146,20 @@ header {
     padding-right: 282px;
 }
 
-.card {
+.work-card {
     background: var(--clr-background);
-    height: 466px;
+    height: 456px;
     display: flex;
     border-radius: 8px;
+    text-decoration: none;
 }
 
-.card + .card {
+.work-card + .work-card {
     margin-top: 86px;
 }
 
 .card-image {
-    height: 466px;
+    height: 456px;
     width: 518px;
     margin-right: 58px;
     border-radius: 8px 0 0 8px;
@@ -160,6 +168,7 @@ header {
 .card-text {
     margin-right: 58px;
     margin-top: 30px;
+    color: var(--clr-dark);
 }
 
 .card-tag {
@@ -167,16 +176,12 @@ header {
 }
 
 .card-title {
-    color: var(--clr-dark);
-    margin-top: 87px;
+    margin-top: 72px;
 }
 
 .card-description {
-    color: var(--clr-dark);
-    margin-top: 27px;
-    font-size: var(--fs-body);
-    font-family: var(--ff-orienta);
-    line-height: 50px;
+    margin-top: 32px;
+    line-height: 56px;
 }
 
 /* Footer */
@@ -185,14 +190,13 @@ header {
     background: var(--clr-primary);
     color: var(--clr-dark);
     text-align: center;
-    font-size: var(--fs-h3);
     border-top: 1px solid var(--clr-border);
-    padding-top: 100px;
+    padding-top: 99px;
     height: 296px;
 }
 
 .footer-text {
-    padding-bottom: 31px;
+    padding-bottom: 30px;
 }
 
 .footer a {
@@ -378,8 +382,12 @@ header {
 .prototype-link {
     font-weight: var(--fw-reg);
     text-decoration: underline;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-prototype-link);
     color: var(--clr-primary);
+}
+
+.prototype-video {
+    margin-top: 48px;
 }
 
 .project-evaluation::after {
