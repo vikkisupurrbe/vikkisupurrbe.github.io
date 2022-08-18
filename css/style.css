@@ -229,6 +229,7 @@ header {
     padding-bottom: 280px;
     text-align: center;
     color: var(--clr-dark);
+    background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/SCdeco Website PSD Mock-Up.jpg");
 }
 
 .project-summary {
@@ -254,11 +255,7 @@ header {
     margin-top: 48px;
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
-    
-}
-
-.overview-body + .overview-body {
-    margin-top: 32px;
+    row-gap: 32px;
 }
 
 .overview-body-text {
@@ -281,7 +278,6 @@ header {
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
     line-height: 32px;
-    list-style-position: inside;
     margin-top: 24px;
 }
 
@@ -301,6 +297,10 @@ header {
 
 .solution-subtitle {
     line-height: 56px;
+}
+
+.solution-list {
+    margin-left: 24px;
 }
 
 .solution-image {
@@ -347,11 +347,11 @@ header {
 
 .value-map-list {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .user-workflow-list {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .research-competition-subtitle {
@@ -364,5 +364,42 @@ header {
 
 .insights-list {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 50px;
+}
+
+.design-lfp-grid {
+    display: grid;
+    margin-top: 48px;
+    grid-template-columns: 392px 392px;
+    row-gap: 19px;
+    column-gap: 16px;
+}
+
+.prototype-link {
+    font-weight: var(--fw-reg);
+    text-decoration: underline;
+    font-size: var(--fs-h3);
+    color: var(--clr-primary);
+}
+
+.project-evaluation::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--clr-primary);
+    margin-top: 48px;
+}
+
+.project-reflections {
+    padding-top: 48px;
+    padding-bottom: 829px;
+}
+
+.project-reflections-paragraph {
+    margin-top: 40px;
+}
+
+.project-reflections-list {
+    margin-top: 32px;
+    margin-left: 50px;
 }
