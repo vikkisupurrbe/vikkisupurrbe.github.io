@@ -232,12 +232,17 @@ header {
     padding-bottom: 280px;
     text-align: center;
     color: var(--clr-dark);
-    background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/SCdeco Website PSD Mock-Up.jpg");
+    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/SCdeco Website PSD Mock-Up.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .project-summary {
     margin-top: 40px;
     line-height: 56px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .overview {
@@ -278,6 +283,7 @@ header {
 .project-paragraph {
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
+    color: var(--clr-dark);
     line-height: 32px;
     margin-top: 24px;
 }
@@ -376,9 +382,6 @@ header {
 }
 
 .prototype-link {
-    font-weight: var(--fw-reg);
-    text-decoration: underline;
-    font-size: var(--fs-prototype-link);
     color: var(--clr-primary);
 }
 
