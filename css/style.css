@@ -23,7 +23,6 @@
     --fs-h2: 48px;
     --fs-h3: 39px;
     --fs-h4: 25px;
-    --fs-prototype-link: 24px;
     --fs-project-paragraph: 20px;
 }
 
@@ -66,9 +65,11 @@ ul {
 h1,
 h2,
 h3,
+h4,
 p {
     line-height: 1;
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -148,6 +149,7 @@ header {
 .work-card {
     background: var(--clr-background);
     height: 456px;
+    max-width: 1356px;
     display: flex;
     border-radius: 8px;
     text-decoration: none;
@@ -159,14 +161,20 @@ header {
 
 .card-image {
     height: 456px;
-    width: 518px;
-    margin-right: 58px;
+    min-width: 518px;
+    max-width: 518px;
+    width: 100%;
     border-radius: 8px 0 0 8px;
+    background-image: url("../media/SCdeco Website PSD Mock-Up.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-right: 58px;
 }
 
 .card-text {
     margin-right: 58px;
     margin-top: 30px;
+    max-width: 682px;
     color: var(--clr-dark);
 }
 
@@ -254,14 +262,24 @@ header {
     color: var(--clr-background);
 }
 
+.overview-title {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .overview-body {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 250px 800px;
     margin-top: 48px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
     row-gap: 32px;
+    column-gap: 30px;
 }
 
 .overview-body-text {
@@ -275,9 +293,18 @@ header {
     color: var(--clr-dark);
 }
 
+.project-section-tag {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-section-title {
     margin-top: 24px;
     line-height: 72px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-paragraph {
@@ -286,6 +313,9 @@ header {
     color: var(--clr-dark);
     line-height: 32px;
     margin-top: 24px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-paragraph-problem {
@@ -294,11 +324,17 @@ header {
 
 .project-question {
     margin-top: 24px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-section-subtitle {
     color: var(--clr-primary);
     margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .solution-subtitle {
@@ -318,21 +354,37 @@ header {
 .research-hypothesis {
     display: grid;
     grid-template-columns: 112px auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .research-method {
     display: grid;
     grid-template-columns: 85px auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .research-results {
     display: grid;
     grid-template-columns: 78px auto;
     margin-bottom: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-results-paragraph {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .research-carousel {
-    max-width: 1280px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-section-subheading {
@@ -341,6 +393,9 @@ header {
 
 .project-image {
     margin-top: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-image-paragraph {
@@ -365,7 +420,9 @@ header {
 }
 
 .competition-carousel {
-    max-width: 732px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .insights-list {
@@ -379,6 +436,9 @@ header {
     grid-template-columns: 392px 392px;
     row-gap: 19px;
     column-gap: 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .prototype-link {
@@ -387,6 +447,9 @@ header {
 
 .prototype-video {
     margin-top: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-evaluation::after {
@@ -395,6 +458,9 @@ header {
     height: 2px;
     background: var(--clr-primary);
     margin-top: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-reflections {
