@@ -19,20 +19,53 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <h2 class="home-page-title">
-                <a href="index.html" class="header-link">Vikki Liu</a>
-            </h2>
-            <h4 class="home-page-nav">
-                About
-            </h4>
-            <h4 class="home-page-nav">
-                <a href="#work" class="header-link">Work</a>
-            </h4>
-            <h4 class="home-page-nav">
-                <a href="mailto:yingjialiu1216@gmail.com" class="header-link-email">yingjialiu1216@gmail.com</a>
-            </h4>
-        </header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid navbar-container">
+                <h2>
+                    <a class="header-link" href="index.html">Vikki Liu</a>
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars hamburger-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse text-end" id="navLinks">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <h4>
+                                <a class="header-link" href="#">About</a>
+                            </h4>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <h4>
+                                <a class="dropdown-toggle header-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="header-link work-dropdown-item" href="work/scdeco-website.html">SCdeco Website</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-link work-dropdown-item" href="#">Project 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-link work-dropdown-item" href="#">Project 3</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-link work-dropdown-item" href="#">Project 4</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-link work-dropdown-item" href="#">Project 5</a>
+                                    </li>
+                                </ul>
+                            </h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4>
+                                <a class="header-link" href="mailto:yingjialiu1216@gmail.com">yingjialiu1216@gmail.com</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- My Work -->
         <section class="my-work" id="work">

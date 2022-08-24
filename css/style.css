@@ -30,12 +30,8 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
-}
-
-header {
-    height: 120px;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -55,7 +51,7 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-ul {
+ul, li {
     margin: 0;
     padding: 0;
 }
@@ -102,23 +98,31 @@ p {
     font-weight: var(--fw-reg);
 }
 
-/* Header */
+/* Navbar */
 
-header {
-    display: flex;
-    justify-content: space-between;
+nav {
     color: var(--clr-primary);
-    padding-left: 282px;
-    padding-right: 282px;
+    max-width: 1356px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 120px;
 }
 
-.home-page-title {
-    margin-top: 33px;
-    margin-right: 390px;
+.navbar-toggler {
+    border: none;
+    background: none;
 }
 
-.home-page-nav {
-    margin-top: 46px;
+.hamburger-icon {
+    font-size: 35px;
+    color: var(--clr-primary);
+}
+
+.nav-item {
+    margin-left: 104px;
 }
 
 .header-link {
@@ -130,8 +134,16 @@ header {
     color: var(--clr-primary);
 }
 
-.header-link-email {
-    color: inherit;
+.work-dropdown-item {
+    font-size: var(--fs-h4);
+    line-height: 52px;
+}
+
+.dropdown-menu {
+    width: 264px;
+    height: 286px;
+    background-color: var(--clr-background);
+    text-align: center;
 }
 
 /* My Work */
@@ -150,7 +162,11 @@ header {
     background: var(--clr-background);
     height: 456px;
     max-width: 1356px;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 518px 682px;
+    column-gap: 78px;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -168,13 +184,10 @@ header {
     background-image: url("../media/SCdeco Website PSD Mock-Up.jpg");
     background-size: cover;
     background-position: center;
-    margin-right: 58px;
 }
 
 .card-text {
-    margin-right: 58px;
     margin-top: 30px;
-    max-width: 682px;
     color: var(--clr-dark);
 }
 
