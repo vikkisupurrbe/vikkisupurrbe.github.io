@@ -111,6 +111,15 @@ nav {
     height: 120px;
 }
 
+.header-logo-link {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+.header-logo-link:hover {
+    color: var(--clr-primary);
+}
+
 .navbar-toggler {
     border: none;
     background: none;
@@ -128,10 +137,12 @@ nav {
 .header-link {
     color: var(--clr-primary);
     text-decoration: none;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
 }
 
 .header-link:hover {
-    color: var(--clr-primary);
+    color: var(--clr-dark);
 }
 
 .work-dropdown-item {
@@ -158,6 +169,15 @@ nav {
     padding-right: 282px;
 }
 
+.work-card-link {
+    display: block;
+    text-decoration: none;
+    height: 456px;
+    max-width: 1356px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .work-card {
     background: var(--clr-background);
     height: 456px;
@@ -168,10 +188,17 @@ nav {
     grid-template-columns: 518px 682px;
     column-gap: 78px;
     border-radius: 8px;
-    text-decoration: none;
+    color: var(--clr-dark);
+    transition: 0.4s;
+    transition-timing-function: ease-out;
 }
 
-.work-card + .work-card {
+.work-card:hover {
+    background: var(--clr-dark);
+    color: var(--clr-background);
+}
+
+.work-card-link + .work-card-link {
     margin-top: 86px;
 }
 
@@ -188,7 +215,6 @@ nav {
 
 .card-text {
     margin-top: 30px;
-    color: var(--clr-dark);
 }
 
 .card-tag {
