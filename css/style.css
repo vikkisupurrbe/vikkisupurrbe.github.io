@@ -426,6 +426,11 @@ nav {
     margin-right: auto;
 }
 
+.carousel-nav-button {
+    color: var(--clr-dark);
+    font-size: 30px;
+}
+
 .project-section-subheading {
     margin-top: 64px;
 }
