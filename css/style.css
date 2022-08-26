@@ -56,6 +56,10 @@ ul, li {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Typography */
 
 h1,
@@ -103,6 +107,8 @@ p {
 nav {
     color: var(--clr-primary);
     max-width: 1356px;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -111,50 +117,39 @@ nav {
     height: 120px;
 }
 
-.header-logo-link {
-    color: var(--clr-primary);
-    text-decoration: none;
+.navbar-logo {
+    margin-top: 33px;
 }
 
-.header-logo-link:hover {
-    color: var(--clr-primary);
-}
-
-.navbar-toggler {
-    border: none;
-    background: none;
-}
-
-.hamburger-icon {
-    font-size: 35px;
+.navbar-logo-link {
     color: var(--clr-primary);
 }
 
-.nav-item {
-    margin-left: 104px;
+.navbar-logo-link:hover {
+    color: var(--clr-primary);
 }
 
-.header-link {
+.navbar-item {
+    margin-top: 45px;
+}
+
+.navbar-link {
     color: var(--clr-primary);
-    text-decoration: none;
     transition: 0.3s;
     transition-timing-function: ease-out;
 }
 
-.header-link:hover {
+.navbar-link:hover {
     color: var(--clr-dark);
 }
 
-.work-dropdown-item {
-    font-size: var(--fs-h4);
-    line-height: 52px;
+.navbar-dropdown {
+    background: inherit;
+    border: none;
 }
 
-.dropdown-menu {
-    width: 264px;
-    height: 286px;
-    background-color: var(--clr-background);
-    text-align: center;
+.navbar-dropdown-content {
+    display: none;
 }
 
 /* My Work */
@@ -165,8 +160,6 @@ nav {
     justify-content: center;
     padding-top: 86px;
     padding-bottom: 86px;
-    padding-left: 282px;
-    padding-right: 282px;
 }
 
 .work-card-link {
@@ -185,7 +178,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 518px 682px;
+    grid-template-columns: 518px 1fr;
     column-gap: 78px;
     border-radius: 8px;
     color: var(--clr-dark);
