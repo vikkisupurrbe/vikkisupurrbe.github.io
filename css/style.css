@@ -144,12 +144,33 @@ nav {
 }
 
 .navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+}
+
+.navbar-dropdown-button {
     background: inherit;
     border: none;
 }
 
 .navbar-dropdown-content {
     display: none;
+    background: var(--clr-background);
+    position: absolute;
+    left: -50%;
+    width: 264px;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 1;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.navbar-dropdown-item {
+    display: block;
+    margin-top: 24px;
 }
 
 /* My Work */
