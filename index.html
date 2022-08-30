@@ -20,15 +20,18 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav>
+        <nav class="website-navbar" id="websiteNavbar">
             <h2 class="navbar-logo">
                 <a class="navbar-logo-link" href="index.html">Vikki Liu</a>
             </h2>
+            <a class="navbar-button navbar-collapse" href="javascript:void(0);" onclick="navbarCollapse()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
             <h4 class="navbar-item">
                 <a class="navbar-link" href="#">About</a>
             </h4>
             <div class="navbar-dropdown">
-                <button class="navbar-dropdown-button">
+                <button class="navbar-button">
                     <h4 class="navbar-item navbar-link">
                         Work
                         <i class="fa-solid fa-caret-down"></i>
@@ -137,5 +140,6 @@
                 </li>
             </ul>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>

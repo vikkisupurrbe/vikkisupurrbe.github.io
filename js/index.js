@@ -1,12 +1,9 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
+function navbarCollapse() {
+    var x = document.getElementById("websiteNavbar");
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
+    if (x.className === "website-navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "website-navbar";
+    }
+}
