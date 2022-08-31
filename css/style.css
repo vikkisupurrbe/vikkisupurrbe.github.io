@@ -108,7 +108,7 @@ p {
     color: var(--clr-primary);
     max-width: 1356px;
     display: grid;
-    grid-template-columns: 50% 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -127,6 +127,29 @@ p {
 
 .navbar-logo-link:hover {
     color: var(--clr-primary);
+}
+
+.navbar-collapse {
+    margin-top: 40px;
+    font-size: 35px;
+    grid-column: 2;
+    display: none;
+    text-align: right;
+}
+
+.navbar-button {
+    background: inherit;
+    border: none;
+    color: var(--clr-primary);
+}
+
+.navbar-button-collapse:hover {
+    color: var(--clr-primary);
+}
+
+.navbar-collapse-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navbar-item {
@@ -151,12 +174,6 @@ p {
     display: block;
 }
 
-.navbar-button {
-    background: inherit;
-    border: none;
-    color: var(--clr-primary);
-}
-
 .navbar-dropdown-content {
     display: none;
     background: var(--clr-background);
@@ -174,62 +191,8 @@ p {
     margin-top: 24px;
 }
 
-.navbar-collapse {
-    margin-top: 33px;
-    font-size: 35px;
-    grid-column: 4;
+.navbar-email-responsive {
     display: none;
-    text-align: right;
-}
-
-.navbar-collapse:hover {
-    color: var(--clr-primary);
-}
-
-/* Responsive navbar */
-
-@media (max-width: 1200px) {
-    .navbar-item {
-        display: none;
-    }
-
-    .navbar-dropdown {
-        display: none;
-    }
-
-    .navbar-collapse {
-        display: inline-block;
-    }
-
-    .website-navbar {
-        margin-left: 82px;
-        margin-right: 82px;
-        grid-template-columns: 50% 1fr 1fr 7%;
-    }
-
-    .website-navbar.responsive {
-        position: relative;
-    }
-
-    .website-navbar.responsive .navbar-item {
-        display: block;
-        grid-column: 4;
-        position: relative;
-    }
-
-    .website-navbar.responsive .navbar-dropdown {
-        display: block;
-        grid-column: 4;
-        position: relative;
-    }
-
-    .website-navbar.responsive .navbar-dropdown-content {
-        z-index: unset;
-        box-shadow: none;
-        position: relative;
-        left: unset;
-        width: unset;
-    }
 }
 
 /* My Work */
@@ -592,4 +555,77 @@ p {
 .project-reflections-list {
     margin-top: 32px;
     margin-left: 50px;
+}
+
+/* Responsive navbar */
+
+@media (max-width: 1200px) {
+    .navbar-item {
+        display: none;
+    }
+
+    .navbar-dropdown {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block;
+        position: relative;
+    }
+
+    .website-navbar {
+        margin-left: 82px;
+        margin-right: 82px;
+        grid-template-columns: 93% 7%;
+    }
+
+    .website-navbar.responsive {
+        position: relative;
+    }
+
+    .website-navbar.responsive .navbar-collapse-content {
+        grid-column: 2;
+        display: block;
+        position: absolute;
+        top: 120px; /* Height of navbar */
+        right: -82px; /* Navbar right margin */
+        background: var(--clr-background);
+        width: 232px;
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .website-navbar.responsive .navbar-item {
+        display: block;
+        position: relative;
+        margin-top: 32px;
+    }
+
+    .website-navbar.responsive .navbar-item-about {
+        margin-top: 0;
+    }
+
+    .website-navbar.responsive .navbar-dropdown {
+        display: block;
+        position: relative;
+    }
+
+    .website-navbar.responsive .navbar-dropdown-content {
+        z-index: unset;
+        box-shadow: none;
+        position: relative;
+        left: unset;
+        width: unset;
+        margin-top: 32px;
+        padding-bottom: 0;
+    }
+
+    .website-navbar.responsive .navbar-email {
+        display: none;
+    }
+
+    .website-navbar.responsive .navbar-email-responsive {
+        display: block;
+    }
 }
