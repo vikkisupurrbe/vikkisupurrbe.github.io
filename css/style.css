@@ -51,7 +51,7 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-ul, li {
+ul, li, button {
     margin: 0;
     padding: 0;
 }
@@ -591,15 +591,17 @@ p {
         right: -82px; /* Navbar right margin */
         background: var(--clr-background);
         width: 232px;
-        text-align: center;
+        text-align: left;
         padding-top: 16px;
         padding-bottom: 16px;
+        box-shadow: 0px 3px 6px #00000029;
     }
 
     .website-navbar.responsive .navbar-item {
         display: block;
         position: relative;
         margin-top: 32px;
+        margin-left: 72px;
     }
 
     .website-navbar.responsive .navbar-item-about {
