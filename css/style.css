@@ -170,8 +170,14 @@ p {
     position: relative;
 }
 
-.navbar-dropdown:hover .navbar-dropdown-content {
-    display: block;
+.navbar-link-work {
+    max-width: 104px;
+}
+
+@media (min-width: 1200px) {
+    .navbar-link-work:hover .navbar-dropdown-content {
+        display: block;
+    }
 }
 
 .navbar-dropdown-content {
@@ -613,12 +619,13 @@ p {
         position: relative;
     }
 
-    .website-navbar.responsive .navbar-dropdown-content {
+    .website-navbar.responsive .navbar-dropdown-content.open {
+        display: block;
+        width: 232px;
         z-index: unset;
         box-shadow: none;
         position: relative;
-        left: unset;
-        width: unset;
+        left: -70%;
         margin-top: 32px;
         padding-bottom: 0;
     }
@@ -629,5 +636,6 @@ p {
 
     .website-navbar.responsive .navbar-email-responsive {
         display: block;
+        width: 52px;
     }
 }
