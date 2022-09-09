@@ -180,6 +180,10 @@ p {
     }
 }
 
+.work-arrow-up {
+    display: none;
+}
+
 .navbar-dropdown-content {
     display: none;
     background: var(--clr-background);
@@ -190,6 +194,7 @@ p {
     z-index: 1;
     text-align: center;
     padding-bottom: 24px;
+    margin-top: 8px;
 }
 
 .navbar-dropdown-item {
@@ -628,6 +633,14 @@ p {
         left: -70%;
         margin-top: 32px;
         padding-bottom: 0;
+    }
+
+    .website-navbar.responsive .work-arrow-down.hide {
+        display: none;
+    }
+
+    .website-navbar.responsive .work-arrow-up.show {
+        display: inline-block;
     }
 
     .website-navbar.responsive .navbar-email {
