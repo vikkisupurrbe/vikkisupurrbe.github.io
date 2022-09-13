@@ -161,6 +161,8 @@ p {
 
 .navbar-item {
     margin-top: 45px;
+    font: var(--ff-orienta);
+    font-size: var(--fs-h4);
 }
 
 .navbar-link {
@@ -189,7 +191,7 @@ p {
 
 .work-arrow-down {
     margin-left: 16px;
-    margin-top: -2px;
+    margin-top: 4px;
 }
 
 .work-arrow-up {
@@ -211,6 +213,8 @@ p {
 .navbar-dropdown-item {
     display: block;
     margin-top: 24px;
+    font: var(--ff-orienta);
+    font-size: var(--fs-h4);
 }
 
 .navbar-email-responsive {
@@ -299,24 +303,19 @@ p {
     height: 296px;
 }
 
-.footer-text {
-    padding-bottom: 30px;
-}
-
 .footer a {
     color: inherit;
-    height: 36px;
 }
 
 .social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding-left: 56px;
-}
-
-.social-list-item {
-    margin-right: 56px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 85px;
+    max-width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 .linkedin-icon {
@@ -325,7 +324,7 @@ p {
 }
 
 .mail-icon {
-    font-size: 42px;
+    font-size: 41px;
 }
 
 /* Project pages */
@@ -590,6 +589,8 @@ p {
         --fs-project-paragraph: 16px;
     }
 
+    /* Navbar */
+
     .navbar-logo {
         margin-top: 23px;
     }
@@ -609,8 +610,9 @@ p {
     }
 
     .website-navbar {
-        margin-left: 82px;
-        margin-right: 82px;
+        max-width: 604px;
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: 96% 4%;
         height: 80px;
     }
@@ -637,7 +639,8 @@ p {
         display: block;
         position: relative;
         margin-top: 32px;
-        margin-left: 72px;
+        margin-left: 78px;
+        font-size: var(--fs-h3);
     }
 
     .website-navbar.responsive .navbar-item-about {
@@ -655,9 +658,13 @@ p {
         z-index: unset;
         box-shadow: none;
         position: relative;
-        left: -70%;
+        left: -75%;
         margin-top: 32px;
         padding-bottom: 0;
+    }
+
+    .website-navbar.responsive .navbar-dropdown-item {
+        font-size: var(--fs-h3);
     }
 
     .website-navbar.responsive .work-arrow-down.hide {
@@ -667,7 +674,7 @@ p {
     .website-navbar.responsive .work-arrow-up.show {
         display: inline-block;
         margin-left: 16px;
-        margin-top: 2px;
+        margin-top: 7px;
     }
 
     .website-navbar.responsive .navbar-email {
@@ -677,5 +684,72 @@ p {
     .website-navbar.responsive .navbar-email-responsive {
         display: block;
         width: 52px;
+    }
+
+    /* My Work */
+
+    .my-work {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+
+    .work-card-link {
+        height: 240px;
+        max-width: 604px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work-card {
+        height: 240px;
+        max-width: 604px;
+        grid-template-columns: 231px 1fr;
+        column-gap: 47px;
+    }
+
+    .work-card-link + .work-card-link {
+        margin-top: 88px;
+    }
+
+    .card-image {
+        height: 240px;
+        min-width: 231px;
+        max-width: 231px;
+    }
+
+    .card-text {
+        margin-top: 14px;
+    }
+
+    .card-title {
+        margin-top: 31px;
+    }
+    
+    .card-description {
+        margin-top: 12px;
+        line-height: 32px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding-top: 38px;
+        height: 136px;
+    }
+    
+    .social-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 52px;
+        max-width: 106px;
+        margin-top: 17px;
+    }
+    
+    .linkedin-icon {
+        font-size: 24px;
+        margin-top: 2px;
+    }
+    
+    .mail-icon {
+        font-size: 29px;
     }
 }
