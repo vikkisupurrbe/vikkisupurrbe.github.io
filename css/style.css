@@ -367,7 +367,7 @@ p {
 .overview-body {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 250px 800px;
+    grid-template-columns: 27% 73%;
     margin-top: 48px;
     max-width: 1050px;
     margin-left: auto;
@@ -375,7 +375,6 @@ p {
     font-size: var(--fs-project-paragraph);
     font-family: var(--ff-hind-siliguri);
     row-gap: 32px;
-    column-gap: 30px;
 }
 
 .overview-body-text {
@@ -751,5 +750,42 @@ p {
     
     .mail-icon {
         font-size: 29px;
+    }
+
+    /* Project pages */
+
+    .title {
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .project-summary {
+        margin-top: 16px;
+        line-height: 32px;
+        max-width: 448px;
+    }
+
+    .overview {
+        padding-left: 82px;
+        padding-right: 82px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    
+    .overview-title {
+        max-width: 604px;
+    }
+    
+    .overview-body {
+        grid-template-columns: 28% 72%;
+        margin-top: 28px;
+        max-width: 604px;
+        row-gap: 16px;
+    }
+    
+    .overview-body-text {
+        line-height: 24px;
     }
 }
