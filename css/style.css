@@ -311,7 +311,7 @@ p {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-    column-gap: 85px;
+    column-gap: 95px;
     max-width: 166px;
     margin-left: auto;
     margin-right: auto;
@@ -330,8 +330,6 @@ p {
 /* Project pages */
 
 .title {
-    padding-left: 560px;
-    padding-right: 560px;
     padding-top: 280px;
     padding-bottom: 280px;
     text-align: center;
@@ -339,6 +337,12 @@ p {
     background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/SCdeco Website PSD Mock-Up.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.project-title {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-summary {
@@ -351,8 +355,6 @@ p {
 
 .overview {
     background: var(--clr-primary);
-    padding-left: 435px;
-    padding-right: 435px;
     padding-top: 117px;
     padding-bottom: 117px;
     color: var(--clr-background);
@@ -367,7 +369,7 @@ p {
 .overview-body {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 27% 73%;
+    grid-template-columns: 24% 76%;
     margin-top: 48px;
     max-width: 1050px;
     margin-left: auto;
@@ -382,8 +384,6 @@ p {
 }
 
 .project-main-section {
-    padding-left: 560px;
-    padding-right: 560px;
     padding-top: 96px;
     color: var(--clr-dark);
 }
@@ -612,7 +612,7 @@ p {
         max-width: 604px;
         margin-left: auto;
         margin-right: auto;
-        grid-template-columns: 96% 4%;
+        grid-template-columns: 95% 5%;
         height: 80px;
     }
 
@@ -738,7 +738,7 @@ p {
     
     .social-list {
         grid-template-columns: 1fr 1fr;
-        column-gap: 52px;
+        column-gap: 55px;
         max-width: 106px;
         margin-top: 17px;
     }
@@ -755,10 +755,12 @@ p {
     /* Project pages */
 
     .title {
-        padding-left: 160px;
-        padding-right: 160px;
         padding-top: 95px;
         padding-bottom: 95px;
+    }
+
+    .project-title {
+        max-width: 448px;
     }
 
     .project-summary {
@@ -779,7 +781,7 @@ p {
     }
     
     .overview-body {
-        grid-template-columns: 28% 72%;
+        grid-template-columns: 26% 74%;
         margin-top: 28px;
         max-width: 604px;
         row-gap: 16px;
