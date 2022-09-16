@@ -51,7 +51,7 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-ul, li, button {
+ul, li, button, strong {
     margin: 0;
     padding: 0;
 }
@@ -446,9 +446,14 @@ p {
     text-align: right;
 }
 
+.research-table-text {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .research-hypothesis {
     display: grid;
-    grid-template-columns: 112px auto;
+    grid-template-columns: 112px 1fr;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -456,7 +461,7 @@ p {
 
 .research-method {
     display: grid;
-    grid-template-columns: 85px auto;
+    grid-template-columns: 85px 1fr;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -464,7 +469,7 @@ p {
 
 .research-results {
     display: grid;
-    grid-template-columns: 78px auto;
+    grid-template-columns: 78px 1fr;
     margin-bottom: 48px;
     max-width: 800px;
     margin-left: auto;
@@ -625,7 +630,7 @@ p {
         display: block;
         position: absolute;
         top: 80px; /* Height of navbar */
-        right: -82px; /* Navbar right margin */
+        right: -120%;
         background: var(--clr-background);
         width: 232px;
         text-align: left;
@@ -789,5 +794,70 @@ p {
     
     .overview-body-text {
         line-height: 24px;
+    }
+
+    .project-main-section {
+        padding-top: 64px;
+    }
+
+    .project-section-tag {
+        max-width: 448px;
+    }
+
+    .project-section-title {
+        margin-top: 8px;
+        line-height: 48px;
+        max-width: 448px;
+    }
+
+    .project-paragraph {
+        line-height: 24px;
+        max-width: 448px;
+    }
+
+    .project-question {
+        margin-top: 16px;
+        max-width: 448px;
+    }
+
+    .project-section-subtitle {
+        margin-top: 24px;
+        max-width: 448px;
+    }
+
+    .solution-subtitle {
+        line-height: 32px;
+    }
+
+    .solution-list {
+        margin-left: 20px;
+    }
+
+    .solution-image {
+        width: 245px;
+    }
+
+    .research-hypothesis {
+        grid-template-columns: 92px 1fr;
+        max-width: 448px;
+    }
+
+    .research-method {
+        grid-template-columns: 70px 1fr;
+        max-width: 448px;
+    }
+    
+    .research-results {
+        grid-template-columns: 65px 1fr;
+        margin-bottom: 32px;
+        max-width: 448px;
+    }
+
+    .research-carousel {
+        max-width: 448px;
+    }
+
+    .carousel-nav-button {
+        font-size: 24px;
     }
 }
