@@ -270,7 +270,7 @@ p {
     max-width: 518px;
     width: 100%;
     border-radius: 8px 0 0 8px;
-    background-image: url("../media/SCdeco Website PSD Mock-Up.jpg");
+    background-image: url("../media/project1-scdeco/SCdeco Website PSD Mock-Up.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -334,7 +334,7 @@ p {
     padding-bottom: 280px;
     text-align: center;
     color: var(--clr-dark);
-    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/SCdeco Website PSD Mock-Up.jpg");
+    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)), url("../media/project1-scdeco/SCdeco Website PSD Mock-Up.jpg");
     background-size: cover;
     background-position: center;
 }
