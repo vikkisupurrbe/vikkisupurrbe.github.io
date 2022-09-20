@@ -570,7 +570,7 @@ p {
 
 .project-reflections {
     padding-top: 48px;
-    padding-bottom: 829px;
+    padding-bottom: 96px;
 }
 
 .project-reflections-paragraph {
@@ -812,11 +812,13 @@ p {
 
     .project-paragraph {
         line-height: 24px;
+        margin-top: 24px;
         max-width: 448px;
     }
 
     .project-question {
         margin-top: 16px;
+        line-height: 24px;
         max-width: 448px;
     }
 
@@ -831,6 +833,7 @@ p {
 
     .solution-list {
         margin-left: 20px;
+        margin-top: 16px;
     }
 
     .solution-image {
@@ -859,5 +862,78 @@ p {
 
     .carousel-nav-button {
         font-size: 24px;
+    }
+
+    .project-section-subheading {
+        margin-top: 48px;
+    }
+
+    .project-image {
+        margin-top: 32px;
+        max-width: 448px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-image-paragraph {
+        margin-top: 32px;
+    }
+
+    .project-research-title {
+        margin-top: 56px;
+    }
+
+    .value-map-list {
+        margin-left: 40px;
+    }
+
+    .user-workflow-list {
+        margin-left: 44px;
+    }
+
+    .research-competition-subtitle {
+        margin-bottom: 32px;
+    }
+
+    .competition-carousel {
+        max-width: 448px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .insights-list {
+        margin-left: 40px;
+    }
+
+    .design-lfp-grid {
+        margin-top: 32px;
+        grid-template-columns: 219px 219px;
+        row-gap: 11px;
+        column-gap: 10px;
+        max-width: 448px;
+    }
+
+    .prototype-video {
+        margin-top: 32px;
+        display: block;
+    }
+
+    .project-evaluation::after {
+        margin-top: 32px;
+        max-width: 448px;
+    }
+
+    .project-reflections {
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+
+    .project-reflections-paragraph {
+        margin-top: 24px;
+    }
+
+    .project-reflections-list {
+        margin-top: 0;
+        margin-left: 40px;
     }
 }
