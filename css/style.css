@@ -446,6 +446,10 @@ p {
     text-align: right;
 }
 
+.tablet-title {
+    display: none;
+}
+
 .research-table-text {
     margin-left: 0;
     margin-right: 0;
@@ -801,30 +805,29 @@ p {
     }
 
     .project-section-tag {
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .project-section-title {
         margin-top: 8px;
         line-height: 48px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .project-paragraph {
         line-height: 24px;
         margin-top: 24px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .project-question {
         margin-top: 16px;
-        line-height: 24px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .project-section-subtitle {
         margin-top: 24px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .solution-subtitle {
@@ -840,24 +843,32 @@ p {
         width: 245px;
     }
 
+    .desktop-title {
+        display: none;
+    }
+
+    .tablet-title {
+        display: block;
+    }
+
     .research-hypothesis {
         grid-template-columns: 92px 1fr;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .research-method {
         grid-template-columns: 70px 1fr;
-        max-width: 448px;
+        max-width: 472px;
     }
     
     .research-results {
         grid-template-columns: 65px 1fr;
         margin-bottom: 32px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .research-carousel {
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .carousel-nav-button {
@@ -870,7 +881,7 @@ p {
 
     .project-image {
         margin-top: 32px;
-        max-width: 448px;
+        max-width: 472px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -896,7 +907,7 @@ p {
     }
 
     .competition-carousel {
-        max-width: 448px;
+        max-width: 472px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -907,10 +918,10 @@ p {
 
     .design-lfp-grid {
         margin-top: 32px;
-        grid-template-columns: 219px 219px;
+        grid-template-columns: 231px 231px;
         row-gap: 11px;
         column-gap: 10px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .prototype-video {
@@ -920,7 +931,7 @@ p {
 
     .project-evaluation::after {
         margin-top: 32px;
-        max-width: 448px;
+        max-width: 472px;
     }
 
     .project-reflections {
