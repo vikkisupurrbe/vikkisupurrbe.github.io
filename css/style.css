@@ -60,6 +60,10 @@ a {
     text-decoration: none;
 }
 
+label {
+    position: relative;
+}
+
 /* Typography */
 
 h1,
@@ -181,12 +185,6 @@ p {
 
 .navbar-link-work {
     max-width: 104px;
-}
-
-@media (min-width: 1200px) {
-    .navbar-link-work:hover .navbar-dropdown-content {
-        display: block;
-    }
 }
 
 .work-arrow-down {
@@ -501,9 +499,43 @@ p {
     margin-top: 64px;
 }
 
+.image-zoom {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-zoom input:checked + img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: 1;
+    width: auto;
+    height: 100vh;
+}
+
+.image-zoom input {
+    width: 800px;
+    height: 507px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.image-zoom input:checked {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .project-image {
     margin-top: 48px;
-    max-width: 800px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -514,6 +546,13 @@ p {
 
 .project-research-title {
     margin-top: 80px;
+}
+
+.image-link {
+    display: block;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .value-map-list {
@@ -553,6 +592,7 @@ p {
 
 .prototype-link {
     color: var(--clr-primary);
+    text-decoration: underline;
 }
 
 .prototype-video {
@@ -585,6 +625,26 @@ p {
 .project-reflections-list {
     margin-top: 32px;
     margin-left: 50px;
+}
+
+/* Hover effects for desktop */
+
+@media (min-width: 1200px) {
+    .navbar-link-work:hover .navbar-dropdown-content {
+        display: block;
+    }
+
+    .zoom-checkbox:hover {
+        cursor: zoom-in;
+    }
+
+    .image-zoom input:checked:hover {
+        cursor: zoom-out;
+    }
+
+    .image-link:hover {
+        cursor: zoom-in;
+    }
 }
 
 /* Viewport: tablet */
@@ -989,7 +1049,7 @@ p {
         display: block;
         position: absolute;
         top: 80px; /* Height of navbar */
-        right: -140%;
+        right: -130%;
         background: var(--clr-background);
         width: 232px;
         text-align: left;
@@ -1198,6 +1258,7 @@ p {
     }
 
     .solution-image {
+        margin-top: 16px;
         width: 245px;
     }
 
