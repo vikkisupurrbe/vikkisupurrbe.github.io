@@ -778,8 +778,6 @@ p {
     }
 
     .overview {
-        padding-left: 82px;
-        padding-right: 82px;
         padding-top: 56px;
         padding-bottom: 56px;
     }
@@ -881,8 +879,6 @@ p {
     .project-image {
         margin-top: 32px;
         max-width: 472px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .project-image-paragraph {
@@ -907,8 +903,6 @@ p {
 
     .competition-carousel {
         max-width: 472px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .insights-list {
@@ -995,7 +989,7 @@ p {
         display: block;
         position: absolute;
         top: 80px; /* Height of navbar */
-        right: -150%;
+        right: -140%;
         background: var(--clr-background);
         width: 232px;
         text-align: left;
@@ -1121,5 +1115,189 @@ p {
     
     .mail-icon {
         font-size: 29px;
+    }
+
+    /* Project pages */
+
+    .title {
+        padding-top: 51px;
+        padding-bottom: 51px;
+    }
+
+    .project-title {
+        max-width: 318px;
+    }
+
+    .project-summary {
+        margin-top: 16px;
+        line-height: 32px;
+        max-width: 246px;
+    }
+
+    .overview {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    
+    .overview-title {
+        max-width: 318px;
+    }
+    
+    .overview-body {
+        display: block;
+        margin-top: 16px;
+        max-width: 318px;
+    }
+    
+    .overview-body-text {
+        line-height: 24px;
+    }
+
+    .overview-body-text-title {
+        margin-top: 8px;
+    }
+
+    .project-main-section {
+        padding-top: 64px;
+    }
+
+    .project-section-tag {
+        max-width: 318px;
+    }
+
+    .project-section-title {
+        margin-top: 8px;
+        line-height: 40px;
+        max-width: 318px;
+    }
+
+    .project-paragraph {
+        line-height: 24px;
+        margin-top: 24px;
+        max-width: 318px;
+    }
+
+    .project-question {
+        margin-top: 8px;
+        line-height: 24px;
+        max-width: 318px;
+    }
+
+    .project-section-subtitle {
+        margin-top: 24px;
+        max-width: 318px;
+    }
+
+    .solution-subtitle {
+        line-height: 32px;
+    }
+
+    .solution-list {
+        margin-left: 20px;
+        margin-top: 16px;
+    }
+
+    .solution-image {
+        width: 245px;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .tablet-title {
+        display: block;
+    }
+
+    .research-hypothesis {
+        grid-template-columns: 92px 1fr;
+        max-width: 318px;
+    }
+
+    .research-method {
+        grid-template-columns: 70px 1fr;
+        max-width: 318px;
+    }
+    
+    .research-results {
+        grid-template-columns: 65px 1fr;
+        margin-bottom: 32px;
+        max-width: 318px;
+    }
+
+    .research-carousel {
+        max-width: 318px;
+    }
+
+    .carousel-nav-button {
+        font-size: 20px;
+    }
+
+    .project-section-subheading {
+        margin-top: 48px;
+    }
+
+    .project-image {
+        margin-top: 32px;
+        max-width: 318px;
+    }
+
+    .project-image-paragraph {
+        margin-top: 32px;
+    }
+
+    .project-research-title {
+        margin-top: 56px;
+    }
+
+    .value-map-list {
+        margin-left: 40px;
+    }
+
+    .user-workflow-list {
+        margin-left: 44px;
+    }
+
+    .research-competition-subtitle {
+        margin-bottom: 32px;
+    }
+
+    .competition-carousel {
+        max-width: 318px;
+    }
+
+    .insights-list {
+        margin-left: 40px;
+    }
+
+    .design-lfp-grid {
+        margin-top: 32px;
+        grid-template-columns: 318px;
+        row-gap: 16px;
+        max-width: 318px;
+    }
+
+    .prototype-video {
+        margin-top: 32px;
+        display: block;
+    }
+
+    .project-evaluation::after {
+        margin-top: 32px;
+        max-width: 318px;
+    }
+
+    .project-reflections {
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+
+    .project-reflections-paragraph {
+        margin-top: 32px;
+    }
+
+    .project-reflections-list {
+        margin-top: 0;
+        margin-left: 40px;
     }
 }
