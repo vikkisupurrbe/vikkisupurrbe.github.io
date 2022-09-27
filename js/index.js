@@ -12,6 +12,7 @@ const workArrowUpEl = document.getElementById(workArrowUpId);
 const workArrowUpClass = "fa-solid fa-caret-up work-arrow-up";
 const hamburgerClass = "fa-bars";
 const navbarDropdownClass = "navbar-collapse-content";
+const noScrollClass = "no-scroll";
 
 document.addEventListener("click", (e) => {
     const isHamburgerClick = e.target.className.includes(hamburgerClass);
@@ -62,4 +63,8 @@ function workDropdownToggle() {
             workArrowUpEl.className = workArrowUpClass;
         }
     }
+}
+
+function noScrollToggle() {
+    document.body.classList.toggle(noScrollClass);
 }

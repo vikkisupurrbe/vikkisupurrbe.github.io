@@ -501,28 +501,36 @@ p {
 
 .image-zoom {
     width: 800px;
+    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.image-zoom input:checked + img {
+.image-zoom input:checked + .image-zoom-popup {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%);
     z-index: 1;
-    width: auto;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
+    overflow: auto;
+}
+
+.image-zoom input:checked + .image-zoom-popup .popup-image {
+    z-index: 1;
+    width: 98vw;
+    height: auto;
+    margin-top: 0;
 }
 
 .image-zoom input {
-    width: 800px;
-    height: 507px;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     z-index: 2;
+    pointer-events: none;
 }
 
 .image-zoom input:checked {
@@ -531,6 +539,22 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.user-profile-checkbox {
+    width: 800px;
+    height: 507px;
+}
+
+.popup-image {
+    margin-top: 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .project-image {
@@ -548,16 +572,14 @@ p {
     margin-top: 80px;
 }
 
-.image-link {
-    display: block;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .value-map-list {
     margin-top: 0;
     margin-left: 50px;
+}
+
+.user-workflow-checkbox {
+    width: 800px;
+    height: 469px;
 }
 
 .user-workflow-list {
@@ -602,6 +624,11 @@ p {
     margin-right: auto;
 }
 
+.user-performance-checkbox {
+    width: 800px;
+    height: 723px;
+}
+
 .project-evaluation::after {
     content: "";
     display: block;
@@ -634,16 +661,12 @@ p {
         display: block;
     }
 
-    .zoom-checkbox:hover {
+    .image-zoom input:not(:checked) + .image-zoom-popup img:hover {
         cursor: zoom-in;
     }
 
-    .image-zoom input:checked:hover {
+    .image-zoom input:checked + .image-zoom-popup img:hover {
         cursor: zoom-out;
-    }
-
-    .image-link:hover {
-        cursor: zoom-in;
     }
 }
 
@@ -1049,7 +1072,7 @@ p {
         display: block;
         position: absolute;
         top: 80px; /* Height of navbar */
-        right: -130%;
+        right: -120%;
         background: var(--clr-background);
         width: 232px;
         text-align: left;
