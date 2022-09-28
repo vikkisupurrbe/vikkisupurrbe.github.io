@@ -13,6 +13,11 @@ const workArrowUpClass = "fa-solid fa-caret-up work-arrow-up";
 const hamburgerClass = "fa-bars";
 const navbarDropdownClass = "navbar-collapse-content";
 const noScrollClass = "no-scroll";
+const userProfileCheckboxId = "userProfileCheckbox";
+const userWorkflowCheckboxId = "userWorkflowCheckbox";
+const userPerformanceCheckboxId = "userPerformanceCheckbox";
+
+window.onresize = toggleCheckbox;
 
 document.addEventListener("click", (e) => {
     const isHamburgerClick = e.target.className.includes(hamburgerClass);
@@ -65,6 +70,23 @@ function workDropdownToggle() {
     }
 }
 
+// Enables/disables window scroll on desktop
 function noScrollToggle() {
-    document.body.classList.toggle(noScrollClass);
+    if (window.innerWidth >= 1200) {
+        document.body.classList.toggle(noScrollClass);
+    }
+}
+
+function toggleCheckbox() {
+    if (window.innerWidth >= 1200) {
+        // Enable checkboxes on desktop
+        document.getElementById(userProfileCheckboxId).disabled = false;
+        document.getElementById(userWorkflowCheckboxId).disabled = false;
+        document.getElementById(userPerformanceCheckboxId).disabled = false;
+    } else {
+        // Disable checkboxes for all other viewports
+        document.getElementById(userProfileCheckboxId).disabled = true;
+        document.getElementById(userWorkflowCheckboxId).disabled = true;
+        document.getElementById(userPerformanceCheckboxId).disabled = true;
+    }
 }

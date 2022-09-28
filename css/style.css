@@ -352,6 +352,22 @@ p {
     margin-right: auto;
 }
 
+.before-after-button {
+    background: var(--clr-contrast);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 40px;
+    margin-top: 28px;
+    width: 325px;
+    height: 78px;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.before-after-button:hover {
+    background: var(--clr-dark);
+}
+
 .overview {
     background: var(--clr-primary);
     padding-top: 117px;
@@ -506,24 +522,6 @@ p {
     margin-right: auto;
 }
 
-.image-zoom input:checked + .image-zoom-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 98vw;
-    height: 98vh;
-    overflow: auto;
-}
-
-.image-zoom input:checked + .image-zoom-popup .popup-image {
-    z-index: 1;
-    width: 98vw;
-    height: auto;
-    margin-top: 0;
-}
-
 .image-zoom input {
     position: absolute;
     top: 0;
@@ -531,14 +529,6 @@ p {
     opacity: 0;
     z-index: 2;
     pointer-events: none;
-}
-
-.image-zoom input:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .user-profile-checkbox {
@@ -551,10 +541,6 @@ p {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.no-scroll {
-    overflow: hidden;
 }
 
 .project-image {
@@ -654,7 +640,7 @@ p {
     margin-left: 50px;
 }
 
-/* Hover effects for desktop */
+/* Effects for desktop */
 
 @media (min-width: 1200px) {
     .navbar-link-work:hover .navbar-dropdown-content {
@@ -667,6 +653,36 @@ p {
 
     .image-zoom input:checked + .image-zoom-popup img:hover {
         cursor: zoom-out;
+    }
+
+    .image-zoom input:checked + .image-zoom-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 98vw;
+        height: 98vh;
+        overflow: auto;
+    }
+    
+    .image-zoom input:checked + .image-zoom-popup .popup-image {
+        z-index: 1;
+        width: 98vw;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .image-zoom input:checked {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
     }
 }
 
@@ -860,6 +876,13 @@ p {
         max-width: 448px;
     }
 
+    .before-after-button {
+        border-radius: 26px;
+        margin-top: 12px;
+        width: 210px;
+        height: 51px;
+    }
+
     .overview {
         padding-top: 56px;
         padding-bottom: 56px;
@@ -959,6 +982,17 @@ p {
         margin-top: 48px;
     }
 
+    .image-zoom {
+        max-width: 472px;
+        width: auto;
+        margin-top: 32px;
+    }
+    
+    .popup-image {
+        max-width: 472px;
+        width: auto;
+    }
+
     .project-image {
         margin-top: 32px;
         max-width: 472px;
@@ -1042,17 +1076,7 @@ p {
         margin-top: 26px;
     }
 
-    .navbar-item {
-        display: none;
-    }
-
-    .navbar-dropdown {
-        display: none;
-    }
-
     .navbar-collapse {
-        display: block;
-        position: relative;
         margin-top: 26px;
         font-size: 28px;
     }
@@ -1060,76 +1084,6 @@ p {
     .website-navbar {
         max-width: 318px;
         grid-template-columns: 92% 8%;
-        height: 80px;
-    }
-
-    .website-navbar.responsive {
-        position: relative;
-    }
-
-    .website-navbar.responsive .navbar-collapse-content {
-        grid-column: 2;
-        display: block;
-        position: absolute;
-        top: 80px; /* Height of navbar */
-        right: -120%;
-        background: var(--clr-background);
-        width: 232px;
-        text-align: left;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        box-shadow: 0px 3px 6px #00000029;
-    }
-
-    .website-navbar.responsive .navbar-item {
-        display: block;
-        position: relative;
-        margin-top: 32px;
-        margin-left: 78px;
-        font-size: var(--fs-h3);
-    }
-
-    .website-navbar.responsive .navbar-item-about {
-        margin-top: 0;
-    }
-
-    .website-navbar.responsive .navbar-dropdown {
-        display: block;
-        position: relative;
-    }
-
-    .website-navbar.responsive .navbar-dropdown-content.open {
-        display: block;
-        width: 232px;
-        z-index: unset;
-        box-shadow: none;
-        position: relative;
-        left: -75%;
-        margin-top: 32px;
-        padding-bottom: 0;
-    }
-
-    .website-navbar.responsive .navbar-dropdown-item {
-        font-size: var(--fs-h3);
-    }
-
-    .website-navbar.responsive .work-arrow-down.hide {
-        display: none;
-    }
-
-    .website-navbar.responsive .work-arrow-up.show {
-        display: inline-block;
-        margin-left: 16px;
-        margin-top: 7px;
-    }
-
-    .website-navbar.responsive .navbar-email {
-        display: none;
-    }
-
-    .website-navbar.responsive .navbar-email-responsive {
-        display: block;
-        width: 52px;
     }
 
     /* My Work */
@@ -1168,13 +1122,7 @@ p {
 
     .card-title {
         margin-top: 32px;
-        font-family: var(--ff-ubuntu);
         font-size: var(--fs-h1);
-    }
-    
-    .card-description {
-        margin-top: 12px;
-        line-height: 32px;
     }
 
     /* Footer */
@@ -1182,22 +1130,6 @@ p {
     .footer {
         padding-top: 14px;
         height: 88px;
-    }
-    
-    .social-list {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 55px;
-        max-width: 106px;
-        margin-top: 17px;
-    }
-    
-    .linkedin-icon {
-        font-size: 24px;
-        margin-top: 2px;
-    }
-    
-    .mail-icon {
-        font-size: 29px;
     }
 
     /* Project pages */
@@ -1212,8 +1144,6 @@ p {
     }
 
     .project-summary {
-        margin-top: 16px;
-        line-height: 32px;
         max-width: 246px;
     }
 
@@ -1231,17 +1161,9 @@ p {
         margin-top: 16px;
         max-width: 318px;
     }
-    
-    .overview-body-text {
-        line-height: 24px;
-    }
 
     .overview-body-text-title {
         margin-top: 8px;
-    }
-
-    .project-main-section {
-        padding-top: 64px;
     }
 
     .project-section-tag {
@@ -1249,14 +1171,11 @@ p {
     }
 
     .project-section-title {
-        margin-top: 8px;
         line-height: 40px;
         max-width: 318px;
     }
 
     .project-paragraph {
-        line-height: 24px;
-        margin-top: 24px;
         max-width: 318px;
     }
 
@@ -1267,17 +1186,7 @@ p {
     }
 
     .project-section-subtitle {
-        margin-top: 24px;
         max-width: 318px;
-    }
-
-    .solution-subtitle {
-        line-height: 32px;
-    }
-
-    .solution-list {
-        margin-left: 20px;
-        margin-top: 16px;
     }
 
     .solution-image {
@@ -1285,27 +1194,15 @@ p {
         width: 245px;
     }
 
-    .desktop-title {
-        display: none;
-    }
-
-    .tablet-title {
-        display: block;
-    }
-
     .research-hypothesis {
-        grid-template-columns: 92px 1fr;
         max-width: 318px;
     }
 
     .research-method {
-        grid-template-columns: 70px 1fr;
         max-width: 318px;
     }
     
     .research-results {
-        grid-template-columns: 65px 1fr;
-        margin-bottom: 32px;
         max-width: 318px;
     }
 
@@ -1317,71 +1214,33 @@ p {
         font-size: 20px;
     }
 
-    .project-section-subheading {
-        margin-top: 48px;
+    .image-zoom {
+        max-width: 318px;
     }
-
-    .project-image {
-        margin-top: 32px;
+    
+    .popup-image {
         max-width: 318px;
     }
 
-    .project-image-paragraph {
-        margin-top: 32px;
-    }
-
-    .project-research-title {
-        margin-top: 56px;
-    }
-
-    .value-map-list {
-        margin-left: 40px;
-    }
-
-    .user-workflow-list {
-        margin-left: 44px;
-    }
-
-    .research-competition-subtitle {
-        margin-bottom: 32px;
+    .project-image {
+        max-width: 318px;
     }
 
     .competition-carousel {
         max-width: 318px;
     }
 
-    .insights-list {
-        margin-left: 40px;
-    }
-
     .design-lfp-grid {
-        margin-top: 32px;
         grid-template-columns: 318px;
         row-gap: 16px;
         max-width: 318px;
     }
 
-    .prototype-video {
-        margin-top: 32px;
-        display: block;
-    }
-
     .project-evaluation::after {
-        margin-top: 32px;
         max-width: 318px;
-    }
-
-    .project-reflections {
-        padding-top: 32px;
-        padding-bottom: 64px;
     }
 
     .project-reflections-paragraph {
         margin-top: 32px;
-    }
-
-    .project-reflections-list {
-        margin-top: 0;
-        margin-left: 40px;
     }
 }
