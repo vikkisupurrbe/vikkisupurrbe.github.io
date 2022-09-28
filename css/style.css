@@ -987,6 +987,11 @@ p {
         width: auto;
         margin-top: 32px;
     }
+
+    .user-profile-checkbox {
+        width: 1px;
+        height: 1px;
+    }
     
     .popup-image {
         max-width: 472px;
@@ -1008,6 +1013,11 @@ p {
 
     .value-map-list {
         margin-left: 40px;
+    }
+
+    .user-workflow-checkbox {
+        width: 1px;
+        height: 1px;
     }
 
     .user-workflow-list {
@@ -1037,6 +1047,11 @@ p {
     .prototype-video {
         margin-top: 32px;
         display: block;
+    }
+
+    .user-performance-checkbox {
+        width: 1px;
+        height: 1px;
     }
 
     .project-evaluation::after {
