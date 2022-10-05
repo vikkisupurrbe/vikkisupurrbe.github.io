@@ -298,7 +298,7 @@ p {
     background: var(--clr-primary);
     color: var(--clr-dark);
     text-align: center;
-    border-top: 1px solid var(--clr-border);
+    border-top: 1px solid var(--clr-dark);
     padding-top: 99px;
     height: 296px;
 }
