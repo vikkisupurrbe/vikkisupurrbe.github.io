@@ -333,6 +333,10 @@ p {
 
 /* Project pages */
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .title {
     padding-top: 280px;
     padding-bottom: 280px;
@@ -371,6 +375,47 @@ p {
 
 .before-after-button:hover {
     background: var(--clr-dark);
+}
+
+.before-after-popup {
+    display: none;
+}
+
+.before-after-popup.show {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 98vw;
+    height: 98vh;
+    overflow: auto;
+}
+
+.before-after-popup.show + .before-after-close {
+    display: block;
+    color: var(--clr-dark);
+    font-size: 48px;
+    position: fixed;
+    top: 1%;
+    left: 96%;
+    z-index: 3;
+}
+
+.before-after-popup.show + .before-after-close:hover {
+    cursor: pointer;
+}
+
+.before-after-popup.show .before-after-image {
+    z-index: 2;
+    width: 98vw;
+    height: auto;
+    margin-top: 0;
+}
+
+.before-after-close {
+    display: none;
 }
 
 .overview {
@@ -707,10 +752,6 @@ p {
         top: 0;
         left: 0;
     }
-
-    .no-scroll {
-        overflow: hidden;
-    }
 }
 
 /* Viewport: tablet */
@@ -912,6 +953,11 @@ p {
         margin-top: 12px;
         width: 210px;
         height: 51px;
+    }
+
+    .before-after-popup.show + .before-after-close {
+        font-size: 32px;
+        left: 95%;
     }
 
     .overview {
@@ -1191,6 +1237,11 @@ p {
 
     .project-summary {
         max-width: 246px;
+    }
+
+    .before-after-popup.show + .before-after-close {
+        font-size: 25px;
+        left: 93%;
     }
 
     .overview {

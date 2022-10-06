@@ -16,6 +16,9 @@ const noScrollClass = "no-scroll";
 const userProfileCheckboxId = "userProfileCheckbox";
 const userWorkflowCheckboxId = "userWorkflowCheckbox";
 const userPerformanceCheckboxId = "userPerformanceCheckbox";
+const beforeAfterPopupId = "beforeAfterPopup";
+const beforeAfterPopupEl = document.getElementById(beforeAfterPopupId);
+const beforeAfterPopupClass = "before-after-popup";
 
 window.onresize = toggleCheckbox;
 
@@ -71,10 +74,15 @@ function workDropdownToggle() {
 }
 
 // Enables/disables window scroll on desktop
-function noScrollToggle() {
+function toggleScrollDesktop() {
     if (window.innerWidth >= 1200) {
         document.body.classList.toggle(noScrollClass);
     }
+}
+
+// Enables/disables window scroll on all viewports
+function toggleScrollAll() {
+    document.body.classList.toggle(noScrollClass);
 }
 
 function toggleCheckbox() {
@@ -88,5 +96,15 @@ function toggleCheckbox() {
         document.getElementById(userProfileCheckboxId).disabled = true;
         document.getElementById(userWorkflowCheckboxId).disabled = true;
         document.getElementById(userPerformanceCheckboxId).disabled = true;
+    }
+}
+
+function toggleBeforeAfterImage() {
+    toggleScrollAll();
+
+    if (beforeAfterPopupEl.className === beforeAfterPopupClass) {
+        beforeAfterPopupEl.className += " show";
+    } else {
+        beforeAfterPopupEl.className = beforeAfterPopupClass;
     }
 }

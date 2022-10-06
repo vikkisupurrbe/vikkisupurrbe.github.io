@@ -95,11 +95,13 @@
             <h3 class="project-summary">
                 Redesigning the website to improve customers' ordering experience
             </h3>
-            <form action="../index.html">
-                <button class="before-after-button" type="submit">
-                    <h4>See Before VS After</h4>
-                </button>
-            </form>
+            <button class="before-after-button" onclick="toggleBeforeAfterImage()">
+                <h4>See Before VS After</h4>
+            </button>
+            <div class="before-after-popup" id="beforeAfterPopup">
+                <img class="before-after-image rounded-3 shadow" src="../media/project1-scdeco/SCdeco_Before and After.jpg">
+            </div>
+            <i class="fa-regular fa-circle-xmark before-after-close" onclick="toggleBeforeAfterImage()"></i>
         </section>
 
         <!-- Overview -->
@@ -263,7 +265,7 @@
             <h3 class="project-section-subtitle project-section-subheading">User Profile</h3>
             <div class="image-zoom">
                 <label>
-                    <input type="checkbox" class="user-profile-checkbox" id="userProfileCheckbox" onclick="noScrollToggle()"/>
+                    <input type="checkbox" class="user-profile-checkbox" id="userProfileCheckbox" onclick="toggleScrollDesktop()"/>
                     <div class="image-zoom-popup">
                         <img class="popup-image rounded-3 shadow" src="../media/project1-scdeco/Customer Profile.jpg">
                     </div>
@@ -300,7 +302,7 @@
             <h3 class="project-section-subtitle">User Workflow</h3>
             <div class="image-zoom">
                 <label>
-                    <input type="checkbox" class="user-workflow-checkbox" id="userWorkflowCheckbox" onclick="noScrollToggle()"/>
+                    <input type="checkbox" class="user-workflow-checkbox" id="userWorkflowCheckbox" onclick="toggleScrollDesktop()"/>
                     <div class="image-zoom-popup">
                         <img class="popup-image rounded-3 shadow" src="../media/project1-scdeco/User Flow Diagram with Background.png">
                     </div>
@@ -414,7 +416,7 @@
             <h3 class="project-section-subtitle project-section-subheading">Tasks and User Performance</h3>
             <div class="image-zoom">
                 <label>
-                    <input type="checkbox" class="user-performance-checkbox" id="userPerformanceCheckbox" onclick="noScrollToggle()"/>
+                    <input type="checkbox" class="user-performance-checkbox" id="userPerformanceCheckbox" onclick="toggleScrollDesktop()"/>
                     <div class="image-zoom-popup">
                         <img class="popup-image rounded-3 shadow" src="../media/project1-scdeco/User Test - Method.png">
                     </div>
