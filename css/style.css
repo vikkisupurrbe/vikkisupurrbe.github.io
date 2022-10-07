@@ -955,9 +955,14 @@ p {
         height: 51px;
     }
 
+    .before-after-popup.show {
+        height: 78vh;
+    }
+
     .before-after-popup.show + .before-after-close {
         font-size: 32px;
         left: 95%;
+        top: 11%;
     }
 
     .overview {
@@ -1239,9 +1244,14 @@ p {
         max-width: 246px;
     }
 
+    .before-after-popup.show {
+        height: 65vh;
+    }
+
     .before-after-popup.show + .before-after-close {
         font-size: 25px;
         left: 93%;
+        top: 17%;
     }
 
     .overview {
