@@ -100,7 +100,10 @@
             </button>
             <div class="before-after-popup" id="beforeAfterPopup">
                 <img class="before-after-image rounded-3 shadow" src="../media/project1-scdeco/SCdeco_Before and After.jpg">
-                <i class="fa-regular fa-circle-xmark before-after-close" onclick="toggleBeforeAfterImage()"></i>
+                <span class="fa-stack before-after-close">
+                    <i class="fa-solid fa-circle before-after-close-bg"></i>
+                    <i class="fa-solid fa-circle-xmark before-after-close-fg" onclick="toggleBeforeAfterImage()"></i>
+                </span>
             </div>
         </section>
 
